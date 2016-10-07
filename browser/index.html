@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/browser.js"></script>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+
+        <div id="controls">
+          <button id="back" title="Go Back" disabled="true">&#9664;</button>
+          <button id="forward" title="Go Forward" disabled="true">&#9654;</button>
+          <button id="home" title="Go Home">&#8962;</button>
+          <button id="reload" title="Reload">&#10227;</button>
+          <form id="location-form">
+            <div id="center-column">
+              <input id="location" type="text" value="">
+            </div>
+            <input type="submit" value="Go">
+          </form>
+          <button id="zoom" title="Change Zoom">&#128270;</button>
+          <button id="find" title="Find in Page">&#128294;</button>
+        </div>
+
+        <div id="zoom-box">
+          <form id="zoom-form">
+            <input id="zoom-text" type="text">
+            <input type="submit" value="&#128270;">
+            <button id="zoom-in">&#10133;</button>
+            <button id="zoom-out">&#10134;</button>
+          </form>
+        </div>
+
+        <div id="find-box">
+          <form id="find-form">
+            <input id="find-text" type="text">
+            <div id="find-results"></div>
+            <input type="submit" style="position:absolute; visibility:hidden">
+            <button id="match-case">aA</button>
+            <button id="find-backward">&#60;</button>
+            <button id="find-forward">&#62;</button>
+          </form>
+        </div>
+
+        <webview id="wv1" class="mainWebview"  
+          preload="js/observer.js" nodeintegration plugins></webview>
+
+      </div>
+    </div>
+  </body>
+</html>

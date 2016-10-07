@@ -1,0 +1,13 @@
+{
+  "name": "DemoBrowser",
+  "description": "Manage multiple browser windows for demos",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron-prebuilt": "^1.4.3",
+    "electron-reload": "^1.0.2"
+  }
+}

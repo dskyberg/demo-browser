@@ -1,0 +1,13 @@
+.project
+.settings
+node_modules/
+target/
+.log
+*.iml
+.idea
+build/
+coverage/
+typings/
+*.log
+*.map
+*.css

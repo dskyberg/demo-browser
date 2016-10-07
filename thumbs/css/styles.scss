@@ -1,0 +1,34 @@
+@import '../../styles/colors.scss';
+@import '../../styles/globals.scss';
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lucida Grande, Arial, sans-serif;
+  background: $color-background;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: auto;
+  flex-flow: column;
+}
+
+.thumbWebview {
+  display: flex;
+  box-sizing: border-box;
+  border: solid 2px #ccc;
+}
+
+.thumbWebview.active {
+  border: solid 2px $palette-orange-200;
+}
+
+@import 'fab.scss';
